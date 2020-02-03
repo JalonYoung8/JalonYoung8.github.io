@@ -1,0 +1,80 @@
+*{
+  margin: 20;
+  padding: 0;
+}
+section > div > p:first-child {
+    font-style: italic;
+
+}
+section > div{
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  display: absolute;
+    background: red;
+}
+section > div > p {
+  top: 50%;
+    display: inline-block;
+  vertical-align: middle;
+  
+}
+section>div:nth-child(2){
+  
+  color: white
+}
+ul>li:nth-child(3){color: red;}ul>li:nth-child(4){color: red;}
+
+ol>li:nth-child(2){
+  font-size: 24px; 
+}
+ol>li:nth-child(3){
+  font-size: 24px;
+}
+ol{
+  grid-area: ol;
+  background: blue;
+  padding: 25px;
+  width: 100px;
+  height: 100px;
+   justify-self: end;
+  text-align: center;
+}
+ul{
+  grid-area: ul;
+  background: green;
+  padding: 25px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  align-items: center;
+  justify-self: start;
+
+  
+}
+.grid{
+  display: grid;
+  grid-template-areas: "ol ul"; 
+   grid-gap: 50px; 
+
+  
+}
+button{
+    padding: 50px;
+    border-radius: 25px;
+
+}
+button:hover{
+  background-color:blue;
+  color: white;
+
+}
+button:active{
+  background-color:blue;
+  color: white;
+    border-radius: 0px;
+  height: 200px;
+  width: 150px;
+}
+
+
